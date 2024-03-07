@@ -6,7 +6,7 @@
             <el-col :xs="24" :sm="24" :md="14" :lg="14" :xl="14">
                 <div class="login-top hidden-sm-and-down">
                     <h1>
-                        <a href="https://wumei.live/" target="_blank" style="color:#FFF;">FastBee物联网平台</a>
+                        <a href="https://wumei.live/" target="_blank" style="color:#FFF;">mqtt分布式监测平台</a>
                     </h1>
                     <h2><a href="https://wumei.live/" target="_blank" style="color:#FFF;">FastBee</a> open source living iot platform</h2>
 
