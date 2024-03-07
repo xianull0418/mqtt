@@ -1,7 +1,7 @@
 {
-  "name": "fastbee",
+  "name": "mqtt",
   "version": "3.8.0",
-  "description": "FastBee物联网平台",
+  "description": "mqtt分布式监测平台",
   "author": "kerwincui",
   "license": "GPL3.0",
   "scripts": {

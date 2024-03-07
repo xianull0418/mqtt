@@ -2,66 +2,10 @@
 <div class="login">
 
     <div style="padding:20px;">
-        <el-row :gutter="10">
-            <el-col :xs="24" :sm="24" :md="14" :lg="14" :xl="14">
-                <div class="login-top hidden-sm-and-down">
-                    <h1>
-                        <a href="https://wumei.live/" target="_blank">FastBee物联网平台</a>
-                    </h1>
-                    <h2><a href="https://wumei.live/" target="_blank">FastBee</a> open source living iot platform</h2>
-
-                    <div style="max-width:330px;text-align:left;margin:0 auto;">
-                        <div v-if="!bindAccount" style="padding:25px 0;">
-                            <span style="margin-right:10px;">登录方式</span>
-                            <el-button type="success" title="微信登录" size="mini" @click="authLogin" style="border:1px solid #fff;" disabled>
-                                <svg-icon icon-class="wechat" /> 微信
-                            </el-button>
-                            <el-button type="danger" title="QQ登录" size="mini" @click="qqLogin" style="border:1px solid #fff;" disabled>
-                                <svg-icon icon-class="qq" /> QQ
-                            </el-button>
-                            <el-button type="primary" title="支付宝登录" size="mini" @click="authLogin" style="border:1px solid #fff;" disabled>
-                                <svg-icon icon-class="zhifubao" /> 支付宝
-                            </el-button>
-                        </div>
-                        <div v-if="register">
-                            <el-button type="warning" style="padding:0px;">
-                                <el-link href="https://wumei.live/" :underline="false" target="_blank" style="color:#fff;padding:12px 18px;">返回官网</el-link>
-                            </el-button>
-                            <el-button type="success" style="padding:0px;">
-                                <el-link href="https://wumei.live/doc" :underline="false" target="_blank" style="color:#fff;padding:12px 18px;">查看文档</el-link>
-                            </el-button>
-                            <el-button style="padding:0px;">
-                                <router-link :to='{path:"/register",query: this.$route.query }' style="color:#666;padding:11px 18px;display:flex;padding-bottom:12px;">注册账号
-                                </router-link>
-                            </el-button>
-                        </div>
-                        <div style="line-height:20px;border:1px solid #fff;color:#eee;margin-top:30px;width:316px;">
-                            <table>
-                                <tr>
-                                    <td rowspan="3" style="width:60px;font-weight:bold;color:#fff;line-height:28px;background-color:#F56C6C;text-align:center;font-size:18px;">演 示<br />账 号</td>
-                                    <td style="padding:10px 15px 0 10px;">受限管理</td>
-                                    <td style="padding:10px 30px 0 0;">wumei</td>
-                                    <td style="padding-top:10px;">123456</td>
-                                </tr>
-                                 <tr>
-                                    <td style="padding:0 15px 0 10px;">租户账号</td>
-                                    <td>wumei-t1</td>
-                                    <td>123456</td>
-                                </tr>
-                                 <tr>
-                                    <td style="padding:0 15px 10px 10px;">普通用户</td>
-                                    <td style="padding-bottom:10px;">wumei-u1</td>
-                                    <td style="padding-bottom:10px;">123456</td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </el-col>
-            <el-col :xs="24" :sm="24" :md="8" :lg="8" :xl="8">
+      <el-row :gutter="10" justify="center">
+        <el-col >
                 <el-form ref="loginForm" :model="loginForm" :rules="loginRules" class="login-form">
-                    <h3 class="title" v-if="!bindAccount">账号登录</h3>
-                    <h3 class="bindAccountTitle" v-else>绑定蜂信科技账户</h3>
+                    <h3 class="title" >账号登录</h3>
                     <el-form-item prop="username">
                         <el-input v-model="loginForm.username" type="text" auto-complete="off" placeholder="账号">
                             <svg-icon slot="prefix" icon-class="user" class="input-icon" />
@@ -87,8 +31,7 @@
                             <span v-else>登 录 中...</span>
                         </el-button>
                         <el-button v-else :loading="loading" type="primary" style="width:100%;" @click.native.prevent="handleLogin">
-                            <span v-if="!loading">绑定</span>
-                            <span v-else>绑 定 中...</span>
+                            <span >绑 定 中...</span>
                         </el-button>
 
                     </el-form-item>
@@ -98,7 +41,7 @@
     </div>
     <!--  底部  -->
     <div class="el-login-footer">
-        <span>Copyright © 2021-2024 <a target="_blank" href="https://fastbee.cn/">蜂信物联</a> All Rights Reserved.</span>
+        <span>Copyright © 2024 <a target="_blank" href="https://github.com/xianull0418/mqtt">xianull</a> All Rights Reserved.</span>
     </div>
 </div>
 </template>

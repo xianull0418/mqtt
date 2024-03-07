@@ -35,7 +35,7 @@ export default {
   },
   data() {
     return {
-      title: 'FastBee物联网平台',
+      title: 'mqtt分布式监测平台',
       logo: logoImg
     }
   }

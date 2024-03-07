@@ -218,71 +218,8 @@
         </el-row>
     </el-card>
 
-    <el-card shadow="none" style="margin:10px 10px 60px 10px;">
-        <el-row :gutter="40">
-            <el-col :xs="24" :sm="24" :md="10" :lg="10" :xl="10" style="padding:40px;">
-                <div style="padding:30px;margin:20px 0;font-size:14px;">
-                    <div style="font-size:28px;font-weight:bold;margin-bottom:20px;">FastBee物联网平台</div>
-                    <div style="display:table;font-size:14px;margin-bottom:10px;">
-                        <div style="display:table-cell;line-height:22px;"><b style="color:#67C23A;margin-right:10px;">开源版本采用AGPL-3.0许可协议，商业用途需要获得授权</b>
 
-                        </div>
-                    </div>
-                    <div style="display:table;margin-bottom:10px;">
-                        <div style="width:70px;font-weight: bold;display:table-cell;">开源版本：</div>
-                        <div style="display:table-cell;line-height:22px;">可用于个人学习和使用，非商业用途，系统会有小概率弹窗</div>
-                    </div>
-                    <div style="display:table;">
-                        <div style="width:70px;font-weight: bold;display:table-cell;">商业版本：</div>
-                        <div style="display:table-cell;line-height:22px;">可用于商业用途，并提供所有源码，无弹窗，功能优先开源版本发布。<br />
-                            <el-link target="_blank" href="https://wumei.live/doc/pages/sponsor">查看详情 >></el-link>
-                        </div>
-                    </div>
-                </div>
-                <div style="padding:30px;font-size:14px;">
-                    <div style="float:left;width:230px;">
-                        <el-image style="width:210px;" :src="require('@/assets/images/code.jpg')"></el-image>
-                    </div>
-                    <div style="float:left;">
-                        <div style="font-size:18px;font-weight:bold;margin:16px 0;">微信扫一扫，查看小程序端</div>
-                        <div style="font-size:14px;font-weight:bold;margin:16px 0;color:#F56C6C">右侧是移动端H5版本演示 </div>
-                        <div style="display:table;margin-bottom:10px;">
-                            <div style="width:70px;font-weight: bold;display:table-cell;">官方网站</div>
-                            <div style="display:table-cell;">
-                                <el-link target="_blank" href="https://wumei.live/">www.wumei.live</el-link>
-                            </div>
-                        </div>
-                        <div style="display:table;margin-bottom:10px;">
-                            <div style="width:70px;font-weight: bold;display:table-cell;">在线文档</div>
-                            <div style="display:table-cell;">
-                                <el-link target="_blank" href="https://wumei.live/doc">www.wumei.live/doc</el-link>
-                            </div>
-                        </div>
-                        <div style="display:table;margin-bottom:10px;">
-                            <div style="width:70px;font-weight: bold;display:table-cell;">联系作者</div>
-                            <div style="display:table-cell;">
-                                <span>QQ 164770707</span>
-                            </div>
-                        </div>
-                        <div style="display:table;margin-bottom:15px;">
-                            <div style="width:70px;font-weight: bold;display:table-cell;">系统源码</div>
-                            <div style="display:table-cell;">
-                                <el-link target="_blank" href="https://gitee.com/kerwincui/wumei-smart" type="danger">Gitee源码</el-link>
-                                <el-link target="_blank" href="https://github.com/kerwincui/wumei-smart" style="margin-left:20px;">Github源码</el-link>
-                            </div>
-                        </div>
-                    </div>
 
-                </div>
-            </el-col>
-            <el-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12" style="padding:40px;">
-                <div class="phone">
-                    <iframe src="https://wumei.live/h5" id="iframe" frameborder="0" scrolling="auto" height="100%" width="100%" class="phone-container"></iframe>
-                </div>
-            </el-col>
-        </el-row>
-
-    </el-card>
 
     <!--通知公告详情 -->
     <el-dialog :title="notice.noticeTitle" :visible.sync="open" width="800px" append-to-body>
@@ -300,8 +237,7 @@
     </el-dialog>
 
     <div style="width:100%;text-align:center;font-size:14px;color:#666;line-height:32px;margin-top:150px;">
-        <span>Copyright © 2021-2024 <a href="https://fastbee.cn/" target="_blank">FastBee</a> | <a href="https://fastbee.cn/" target="_blank">蜂信物联</a> | Apache License</span><br />
-        <span>项目文档<a href="https://fastbee.cn/doc/" target="_blank"> https://fastbee.cn/doc/</a></span>
+        <span>Copyright © 2024 <a href="https://github.com/xianull0418/mqtt" target="_blank">mqtt</a> | <a href="https://github.com/xianull0418/mqtt" target="_blank"></a> | Apache License</span><br />
     </div>
 
 </div>
